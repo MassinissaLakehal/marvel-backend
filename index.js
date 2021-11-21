@@ -31,7 +31,7 @@ app.get("/comics/:characterId", async (req, res) => {
   res.status(200).json(getCharacterId.data);
 });
 
-app.listen(4000, () => {
+app.listen(process.env.PORT, () => {
   console.log("Server has started");
 });
 
